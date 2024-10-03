@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bustan E-learning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1b1d36;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #e83c3d;
+      margin-top: 5px;
+    }
+
+    .teacher-img {
+      width: 50%;
+      height: auto;
+      margin-left: 20px;
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #001f3f;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      display: block;
+      margin: 0 auto 15px auto;
+      width: 50px;
+    }
+
+    .card-link {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #001f3f;; 
+      font-weight: bold;
+    }
+
+    .card-link::after {
+      content: ' →';
+    }
+
+    .footer {
+      background-color: #001f3f;
+      color: #ffffff;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .footer-section {
+      flex: 1; 
+      max-width: 300px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .social-media {
+      margin-top: 10px;
+    }
+
+    .social-media a {
+      margin-right: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .social-media img {
+      width: 24px; 
+      vertical-align: middle; 
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-content">
+        <h1>Welcome to Bustan e-Learning</h1>
+        <img src="https://img.freepik.com/free-vector/teacher-standing-near-blackboard-holding-stick-isolated-flat-vector-illustration-cartoon-woman-character-near-chalkboard-pointing-alphabet_74855-8600.jpg" alt="Teacher" class="teacher-img">
+      </div>
+    </div>
+
+    <div class="subject-grid">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVDbQaq6PHF7Uohp_kuvdXH0EwPOcIUeISBQ&s" alt="Mathematics">
+        <div class="card-title">MATHEMATICS</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__tTcCRa6KRie2t_YmDDxRu1v4_78rbw_XQ&s" alt="Chemistry">
+        <div class="card-title">CHEMISTRY</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/002/236/242/non_2x/history-minimal-thin-line-icons-set-vector.jpg" alt="History">
+        <div class="card-title">HISTORY</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/biology-hand-drawn-doodles-lettering-education-science-vector-white-background-135246167.jpg" alt="Biology">
+        <div class="card-title">BIOLOGY</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT21p4FmiAaA6JeUObMq_yyTIKA2d9IyVAi7A&s" alt="Physics">
+        <div class="card-title">PHYSICS</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7T-V7g1N1YT5h5JZFic1ck5XWRCcNtRlrw&s" alt="Literature">
+        <div class="card-title">LITERATURE</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSovM8Vjr1A2zEK5yfqTv1tAn8hT-silDWAHA&s" alt="Geography">
+        <div class="card-title">GEOGRAPHY</div>
+        <a href="#" class="card-link">View Course</a>
+      </div>
+      <div class="card">
+        <img src="https://www.thinknexttraining.com/images/job-oriented-courses-after-12th-science-mob.jpgg" alt="More Courses">
+        <div class="card-title">MORE COURSES</div>
+        <a href="#" class="card-link">View More</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: your@mail.com</p>
+        <p>Phone: 123456789</p>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Lorem ipsum is placeholder text commonly.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <div class="social-media">
+          <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook"></a>
+          <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
+          <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+          <a href="#" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube.png" alt="YouTube"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Bustan e-Learning. All Rights Reserved. | <a href="#">Unsubscribe</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
